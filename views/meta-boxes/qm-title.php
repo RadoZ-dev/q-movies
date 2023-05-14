@@ -1,6 +1,6 @@
 <?php
 global $post;
-$qmTitleMeta = get_post_meta( $post->ID, 'qm-title', true );
+$qmTitleMeta = get_post_meta( $post->ID, 'movie_title', true );
 ?>
 
-<input type="text" name="qm-title" value="<?php echo esc_attr( $qmTitleMeta ) ?>">
+<input type="text" name="movie_title" value="<?php echo esc_attr( $qmTitleMeta ) ?>">

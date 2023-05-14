@@ -34,7 +34,7 @@ class MetaBox
         if ( ! current_user_can( 'edit_posts' ) ) 
             return;
 
-        if ( $_POST[ 'qm-title' ] ) 
-            update_post_meta( $post_id, 'qm-title', sanitize_text_field( $_POST[ 'qm-title' ] ) );
+        if ( $_POST[ 'movie_title' ] ) 
+            update_post_meta( $post_id, 'movie_title', sanitize_text_field( $_POST[ 'movie_title' ] ) );
     }
 }

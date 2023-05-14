@@ -16,6 +16,7 @@ class PostType
     public function __construct() 
     {
         add_action('init', [ $this, 'q_movie_post_type' ] );
+        add_filter( 'single_template', [ $this, 'movie_post_type_template' ] );
     }
 
     public function q_movie_post_type() 
@@ -33,5 +34,15 @@ class PostType
                 'supports' => array( 'qm_title', 'title', 'editor', 'author', 'thumbnail', 'excerpt', 'revisions' ),
             )
         );
+    }
+
+    public function movie_post_type_template( $single_template ) {
+        global $post;
+
+        if ( 'movies' === $post->post_type ) {
+            $single_template = QM_PATH . '/views/custom-post-templates/single-movies.php';
+        }
+
+        return $single_template;
     }
 }
