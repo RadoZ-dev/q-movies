@@ -1,0 +1,12 @@
+{
+  "name": "Q Movies",
+  "slug": "wp-plugin-q-movies",
+  "download_url": "https://github.com/RadoZ-dev/q-movies",
+  "version": "1.0.0",
+  "author": "Radoslav Zdravkovic",
+  "homepage": "https://github.com/RadoZ-dev/",
+  "sections": {
+    "description": "Movies custom post type registration plugin",
+    "changelog": ""
+  }
+}

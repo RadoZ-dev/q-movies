@@ -1,0 +1,14 @@
+{
+  "name": "q-agency/q-movies",
+  "authors": [
+    {
+      "name": "Radoslav Zdravkovic",
+      "email": "zdravkovicradoslav@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "QMovies\\": "src/"
+    }
+  }
+}
