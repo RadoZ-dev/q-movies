@@ -5,6 +5,7 @@ namespace QMovies;
 use QMovies\Setup\PostType;
 use QMovies\Setup\MetaBox;
 use QMovies\Traits\SingletonTrait;
+use QMovies\Blocks\QMFavoriteQuote\QMFavoriteQuote;
 
 if ( ! defined( 'ABSPATH' ) ) 
 {
@@ -24,5 +25,6 @@ class QMoviesInit
     {
         PostType::getInstance();
         MetaBox::getInstance();
+        QMFavoriteQuote::getInstance();
     }
 }
